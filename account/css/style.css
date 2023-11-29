@@ -1,0 +1,241 @@
+:root {
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*a {
+    text-decoration: none;
+}
+body{
+    background-repeat: no-repeat;
+    background-image: url(../imgs/backk.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-family: var(--primary-font);
+}
+.logo-edit {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.navbar {
+    --bs-navbar-nav-link-padding-x: 1rem;
+}
+
+.edit-list {
+    font-family: var(--secondary-font);
+}
+
+.edit-list a {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.navbar {
+    --bs-navbar-color: black;
+    --bs-navbar-hover-color: black;
+    --bs-navbar-active-color: black;
+    --bs-navbar-brand-color: black;
+    --bs-navbar-brand-hover-color: black;
+
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: black;
+}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: 0;
+    --bs-nav-pills-link-active-color: black;
+    --bs-nav-pills-link-active-bg: white;
+}
+
+.nav-link {
+    color: black;
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    line-height: 22.8751px;
+    font-weight: bold;
+}
+
+.nav {
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: black;
+}
+.info {
+    padding-top: 100px;
+}
+
+.container2 {
+    width: 80%;
+    margin: auto;
+    overflow: visible;
+}
+
+.info-common {
+    width: 50%;
+    padding-bottom: 100px;
+}
+
+.info-img {
+    float: left;
+    position: relative;
+}
+
+.img1 {
+    width: 370px;
+    height: 450px;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    border: solid #555555;
+    border-radius: 5px;
+    border-width: 8px;
+}
+
+.img2 {
+    width: 370px;
+    height: 450px;
+    position: absolute;
+    top: 24px;
+    left: 140px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-text {
+    float: right;
+}
+
+.info-text h2 {
+    font-size: 34px;
+    line-height: 22px;
+    padding-bottom: 25px;
+    position: relative;
+    padding-left: 13px;
+}
+
+.info-text h2::before {
+    content: '';
+    background-color: #ff305b;
+    width: 4px;
+    position: absolute;
+    height: 25.5px;
+    left: 0;
+    bottom: 24px;
+}
+
+.info-text p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+
+.hr {
+    border-style: dotted;
+    width: 600px;
+}
+
+.info-list {
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 25px;
+    overflow: auto;
+}
+.info-list ul{
+    margin-top: 100px;
+}
+
+.info-list span {
+    color: #333333;
+    font-weight: bold;
+}
+
+.info-list ul li {
+    float: left;
+    width: 35%;
+    color: #555555;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.info-btn {
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-left: 630px;
+}
+
+.info-btn a {
+    font-size: 16px;
+    line-height: 25px;
+    margin-right: 10px;
+    padding: 15px 24px;
+    background-color: #0d6efd;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    color: white;
+    text-decoration: none;
+}
+
+.info-btn a:hover {
+    background-color: #045bde;
+}
+
+#icon {
+    padding-left: 5px;
+}
+
+.bglayer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateY(150%);
+    transition: 0.7s;
+    visibility: hidden;
+}
+
+.img2:hover .bglayer {
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+#icons-hover {
+    padding-right: 20px;
+    position: relative;
+    left: 30%;
+    top: 48%;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+#icons-hover:hover {
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+.clr {
+    clear: both
+}
