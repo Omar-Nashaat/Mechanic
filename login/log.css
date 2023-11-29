@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(./images/backk.jpg);
+}
+
+.logn {
+  position: absolute;
+  top: 10px;
+  left: 530px;
+  height: 250px;
+  width: 30%;
+  transition: transform 1s ease;
+  padding-bottom: 10px;
+}
+
+.logn:hover {
+  animation: flipAnimation 1s;
+  /* Trigger the flip animation on hover */
+}
+
+@keyframes flipAnimation {
+  0% {
+    transform: perspective(400px) rotateY(0);
+    /* Start with no rotation */
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(360deg);
+    /* Rotate to 360 degrees */
+  }
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 500px;
+  padding: 0px 20px;
+  position: absolute;
+  top: 30%;
+  left: 33.5%;
+}
+
+.wrapper {
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.title {
+  height: 90px;
+  background: #053B50;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form {
+  padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row {
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.wrapper form .row input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+form .row input:focus {
+  border-color: #000000;
+  box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+form .row input::placeholder {
+  color: #999;
+}
+
+.wrapper form .row i {
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #053B50;
+  border: 1px solid #ffffff;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form .pass {
+  margin: -8px 0 20px 0;
+}
+
+.wrapper form .pass a {
+  color: #000000;
+  font-size: 17px;
+
+  transition: all ease-in-out 0.1s;
+}
+
+.wrapper form .pass a:hover {
+  color: #4f4f4f;
+}
+
+.signup-link {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  padding-bottom: 15px;
+}
+
+.signup-link a {
+  color: #053B50;
+}
+.signup-link a:hover{
+  color: red;
+}
+.row-button{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.row-button a{
+  color: white;
+  background-color: #176B87;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all ease-in-out 0.1s;
+}
+.row-button a:hover{
+  color: white;
+  background-color: #053B50;
+}

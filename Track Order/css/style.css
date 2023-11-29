@@ -1,0 +1,280 @@
+:root {
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*a {
+    text-decoration: none;
+}
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#home h5 {
+    font-size: 50px;
+    font-family: var(--primary-font);
+    font-weight: bolder;
+    line-height: 55px;
+}
+
+#home .main-sent {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#home i {
+    padding: 10px 11px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#home .home-content .btn {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 15px;
+    font-family: var(--primary-font);
+    margin-right: 10px;
+    width: 200px;
+}
+
+.logo-edit {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.navbar {
+    --bs-navbar-nav-link-padding-x: 1rem;
+}
+
+.edit-list {
+    font-family: var(--secondary-font);
+}
+
+.edit-list a {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.navbar {
+    --bs-navbar-color: black;
+    --bs-navbar-hover-color: black;
+    --bs-navbar-active-color: black;
+    --bs-navbar-brand-color: black;
+    --bs-navbar-brand-hover-color: black;
+
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: black;
+}
+
+body {
+    background-color: grey;
+}
+
+.card {
+    z-index: 0;
+    background-color: #ECEFF1;
+    padding-bottom: 130px;
+    margin-top: 80px;
+    border-radius: 20px;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.3);
+}
+
+.top {
+    padding-top: 40px;
+    padding-left: 13% !important;
+    padding-right: 13% !important;
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #455A64;
+    padding-left: 0px;
+    margin-top: 30px;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar .step0:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    color: #fff;
+}
+
+#progressbar li:before {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    background: #C5CAE9;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 12px;
+    background: #C5CAE9;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: -1;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: -50%;
+}
+
+#progressbar li:nth-child(2):after,
+#progressbar li:nth-child(3):after {
+    left: -50%;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 50%;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #424242;
+}
+
+#progressbar li.active:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.icon3 {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    position: relative;
+    top: -5px;
+    right: 13px;
+}
+
+.icon-content {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .icon-content {
+        width: 50%;
+    }
+}
+
+.roww {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    display: flex;
+    justify-content: center;
+}
+
+.row0 {
+    position: relative;
+    right: 333px;
+}
+
+.row1 {
+    position: relative;
+    right: 93px;
+}
+
+.row2 {
+    position: relative;
+    left: 153px;
+}
+
+.row3 {
+    position: relative;
+    left: 378px;
+}
+
+.font-weight-bold1 {
+    position: relative;
+    top: -20.5px;
+    right: 10px;
+}
+
+.font-weight-bold {
+    position: relative;
+    right: -5px;
+}
+
+.btn {
+    z-index: 1;
+    width: 100px;
+    height: 50px;
+    background-color: #8B0000;
+    position: absolute;
+    top: 72%;
+    right: 17%;
+    color: #fff;
+    font-size: 20px;
+    font-family: '' Tahoma, Verdana, Segoe, sans-serif;
+    border-radius: 15px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: black;
+    color: #fff;
+}
+
